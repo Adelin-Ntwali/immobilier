@@ -1,0 +1,48 @@
+{% extends 'elements_commun/base.html' %}  
+{% block catalogue %}
+{% include "elements_commun/header.html" %}
+
+<section class="breadcrumb blog_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb_iner">
+                    <div class="breadcrumb_iner_item">
+                         <h2>Catalogue</h2>
+                         <p>Home<span class="ti-angle-double-right"></span>Catalogue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "elements_commun/appartements.html" %}
+
+<div class="room_part mb_110">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="room_1">
+                    <img src="img/room_1.png" alt="">
+                    <div class="room_text_1">
+                        <h1>L'immobilier dort ,<br>mais il ne meurt <br> jamais.</h1>
+                        <a href="#" class="btn_2">Lire Plus<span class="ti-arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="room_2">
+                    <img src="img/room_2.png" alt="">
+                    <div class="room_text_2">
+                         <h1>Un bien vide <br>coute plus cher qu'un<br>loyer modéré.</h1>
+                        <a href="#" class="btn_2">Lire Plus <span class="ti-arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+{% include "elements_commun/footer.html" %}
+{% endblock catalogue %}
