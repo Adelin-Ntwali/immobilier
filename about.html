@@ -1,0 +1,310 @@
+{% extends 'elements_commun/base.html' %}  
+{% block about %}
+{% include "elements_commun/header.html" %} 
+
+<section class="breadcrumb blog_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb_iner">
+          <div class="breadcrumb_iner_item">
+            <h2>A propos de nous</h2>
+            <p>Home<span class="ti-angle-double-right"></span>A propos de nous</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gred">
+  <h1 class="gd">GRED</h1>
+  <p>Agence de Gestion Locative et Immobilier</p>
+</div>
+
+<style>
+  .gred {
+    text-align: center;
+    font-weight: bold;
+  }
+  .gd{
+    font-size:50px;
+  }
+</style>
+
+<section class="team_part">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="team_img"></div>
+        </div>
+        <div class="offset-lg-1 col-lg-5">
+          <div class="team_member_text">
+            <br>
+            <h1>Agence de Gestion Locative et Immobilier</h1>
+            <p>Nous somme une agence immobilière specialisée dans la gestion locative enfin d'offrir un service clé en main
+              aux proprietaires Immobiliers qui éprouvent des difficultés à gérer leurs biens en raison de leur éloignement
+              géographique, de leur age avancé ou de nombreuses responsabilités personnelles et professionnelles.
+            </p>
+            <p> L'agence  vise à offrir des solutions modernes, efficaces et adaptées aux propriétaires locaux et de la diaspora,
+              leur permettent d'optimiser leurs revenus locatifs sans contrainnte.
+            </p>
+            <p> Avec une équipe qualifiée et une connaissance  approfondue du marché immobilier à Goma , l'agence  ambitionne
+              de devenir un acteur incotournable dans le secteur de la gestion immobilière.
+            </p>
+            {% comment %} <ul>
+              <li><a href="#" class=""><span class="ti-paint-bucket"></span>Set dry signs spirit a kind First shall them windged creping</a></li>
+              <li><a href="#" class=""><span class="ti-check-box"></span>He two face one moved dominion man you're likeness</a></li>
+              <li><a href="#" class=""><span class="ti-ruler-pencil"></span>Sea forth fill have divide be dominion from life for feven</a></li>
+            </ul> {% endcomment %}
+            <a href="#" class="btn_1">Lire plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/section_overlay.png" alt="">
+  </div>
+
+  {% load static %}
+</section>
+
+<div class="title">
+  <h2>Nos membres</h2>
+</div>
+
+<div class="col">
+  <div class="row">
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Daniel BASANSE, Directeur Administracteur.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Daniel BASANSE</h3>
+                <p><span class="ti-location-pin"></span>Directeur Administratif</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Safi Rosy, Directrice Financiere.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Safi Rosy</h3>
+                <p><span class="ti-location-pin"></span>Directrice Financière</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Gloire BAKENGE, Directeur commercial  Marketing.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Gloire BAKENGE</h3>
+                <p><span class="ti-location-pin"></span>Directeur commercial et Marketing</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Mwendelwa David, Directeur information techno.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Mwendelwa David</h3>
+                <p><span class="ti-location-pin"></span>Directeur d'information et technology</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Onlla KOMOMBO.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Safi Rosy</h3>
+                <p><span class="ti-location-pin"></span>Membre</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Jonathan TEMBO.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Gloire BAKENGE</h3>
+                <p><span class="ti-location-pin"></span>Membre</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+   
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-lg-4">
+    <div class="single_appartment_part">
+        <div class="appartment_img">
+            <img src="{% static 'img\Personnels\Esther Mulonda.jpg' %}" alt="">
+            <div class="single_appartment_text">
+                <h3>Esther Mulonda</h3>
+                <p><span class="ti-location-pin"></span>Membre</p>
+            </div>
+        </div>
+        <div class="single_appartment_content">
+            <p>Agence de Gestion Locative et Immobilier</p>
+        </div>
+    </div>
+  </div>
+  
+   
+  </div>
+</div>
+</div>
+
+<style>
+  .col-membre{
+    flex-direction: column;
+  }
+  .row-membre{
+    flex-direction: row;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .dani {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+    
+  }
+  .title {
+    padding: 1.25rem 1.25rem; /* 20px converted to rem */
+    background-color: #14303A;
+    max-width: 18.75rem; /* 300px converted to rem */
+    margin: 0 0 1.25rem 1.25rem; /* 20px converted to rem */
+    text-align: center;
+    border-radius: 0.625rem; /* 10px converted to rem */
+  }
+
+  .title h2 {
+    padding-top: 0.3125rem; /* 5px converted to rem */
+    font-weight: bold;
+    color: beige;
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+
+  .row{
+    /* padding-left: 60px; */
+    padding-bottom: 30px;
+  }
+  .single_appartment_text{
+    padding-top: 10px;
+  }
+  h3{
+    color: rgb(131, 75, 2);
+    font-weight: bold;
+  }
+  .col{
+    padding-left: 20px;
+  }
+
+
+  /* --- Card Styling --- */
+  .single_appartment_part {
+    background-color: #f8f8f8; /* Light background for the card */
+    border-radius: 0.625rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide image overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin-bottom: 1.25rem; /* Space between cards */
+  }
+
+  .single_appartment_part:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+
+  .appartment_img {
+    width: 100%;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+
+  .appartment_img img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any extra space below the image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+
+  .appartment_img:hover img {
+    transform: scale(1.1); /* Zoom in on the image on hover */
+  }
+
+  .single_appartment_text {
+    padding: 1rem; /* Padding around the text */
+    text-align: center;
+  }
+
+  .single_appartment_text h3 {
+    color: #14303A; /* Darker color for the name */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space below the name */
+    font-size: 1.1rem;
+  }
+
+  .single_appartment_text p {
+    color: #666; /* Gray color for the position */
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .single_appartment_content {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #eee; /* Light border above the content */
+  }
+
+  .single_appartment_content p {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0;
+  }
+
+  .single_appartment_text .ti-location-pin {
+    color: #834b02; /* Use the same color as in the h3 */
+    margin-right: 0.25rem;
+  }
+
+</style>
+
+{% comment %} {% include "elements_commun/caract.html" %}  {% endcomment %}
+{% include "elements_commun/footer.html" %}
+{% endblock about%}

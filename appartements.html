@@ -1,0 +1,237 @@
+<div class="apartment_part">
+    <div class="container">
+        <div class="row justify-content-between align-content-center">
+            <div class="col-md-8 col-lg-7">
+                <div class="section_tittle">
+                    <h1>Disposer d'un <br> Bel Appartement</h1>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-5">
+                <div class="view_more_btn float-right d-none d-md-block">
+                    <a href="{% url 'catalogue'%}" class="btn_2">Voir plus <span class="ti-arrow-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <div class="single_appartment_part">
+                    <div class="appartment_img">
+    {% load static %}
+                        <img src="{% static "img/1.jpg" %}" alt="">
+                        <div class="single_appartment_text">
+                            <h3>$0,000</h3>
+                            <p><span class="ti-location-pin"></span>Au bord du lac kivu, Goma</p>
+                        </div>
+                    </div>
+                    <div class="single_appartment_content">
+                        <a href="#" class="love_us"> <span class="ti-heart"></span> </a>
+                        <p>Home, Apartment</p>
+                        <a href="#"><h4>Villa à louer au bord du lac</h4></a>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="flaticon-bath"></span></a> plus</li>
+                            <li><a href="#"><span class="flaticon-bed"></span></a> plus</li>
+                            <li><a href="#"><span class="flaticon-frame"></span></a> 2400 sqft</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+            <div class="single_appartment_part">
+                <div class="appartment_img">
+                    <img src="{% static "img/2.jpg"%}" alt="">
+                    <div class="single_appartment_text">
+                    <h3>$0,000</h3>
+                    <p><span class="ti-location-pin"></span> Au bord du lac kivu, Goma</p>
+                </div>
+            </div>
+            <div class="single_appartment_content">
+                <a href="#" class="love_us"> <span class="ti-heart"></span> </a>
+                <p>Home, Apartment</p>
+                <a href="#"><h4>Villa à louer au bord du lac</h4></a>
+                <ul class="list-unstyled">
+                    <li><a href="#"><span class="flaticon-bath"></span></a> plus</li>
+                    <li><a href="#"><span class="flaticon-bed"></span></a> plus</li>
+                    <li><a href="#"><span class="flaticon-frame"></span></a> 2400 sqft</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="single_appartment_part">
+                    <div class="appartment_img">
+                        <img src="{% static "img/3.jpg"%}" alt="">
+                        <div class="single_appartment_text">
+                            <h3>$0,000</h3>
+                            <p><span class="ti-location-pin"></span> Au bord du lac kivu, Goma</p>
+                        </div>
+                    </div>
+                    <div class="single_appartment_content">
+                        <a href="#" class="love_us"> <span class="ti-heart"></span> </a>
+                        <p>Home, Apartment</p>
+                        <a href="#"><h4>Villa à louer au bord du lac</h4></a>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="flaticon-bath"></span></a> plus</li>
+                            <li><a href="#"><span class="flaticon-bed"></span></a> plus</li>
+                            <li><a href="#"><span class="flaticon-frame"></span></a> 2400 sqft</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+ /* --- Apartment Section --- */
+.apartment_part {
+  padding: 2.5rem 0;
+  overflow: hidden;
+  position: relative; 
+}
+
+.apartment_part .row:nth-child(2) {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.apartment_part .col-md-4 {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 25rem;
+  scroll-snap-align: start;
+}
+
+
+.apartment_part .row:nth-child(2)::-webkit-scrollbar {
+  display: none;
+}
+
+
+.apartment_part .row:nth-child(2) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.single_appartment_part {
+  background-color: #f8f8f8;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0;
+}
+
+.single_appartment_part:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.appartment_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.appartment_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.appartment_img:hover img {
+  transform: scale(1.1);
+}
+
+.single_appartment_text {
+  padding: 1rem;
+  text-align: center;
+}
+
+.single_appartment_text h3 {
+  color: #14303A;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.single_appartment_text p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.single_appartment_content {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.single_appartment_content p {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.single_appartment_text .ti-location-pin {
+  color: #834b02;
+  margin-right: 0.25rem;
+}
+
+
+.view_more_btn .btn_2 {
+  background-color: #f0ae57;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.view_more_btn .btn_2:hover {
+  background-color: #6a3e02;
+}
+
+
+.scroll-indicator {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #834b02;
+  opacity: 0.7;
+  animation: scroll-arrow-bounce 1.5s infinite;
+  pointer-events: none; /* Prevent the arrow from interfering with clicks */
+  display: none; /* Hide by default */
+}
+
+.apartment_part .row:nth-child(2).has-scroll .scroll-indicator {
+  display: block; /* Show when there is scroll */
+}
+
+@keyframes scroll-arrow-bounce {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(0.5rem);
+  }
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    right: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+
+</style>
